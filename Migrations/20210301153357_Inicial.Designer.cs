@@ -9,7 +9,7 @@ using Registro_con_Detalle.DAL;
 namespace Registro_con_Detalle.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20210226171501_Inicial")]
+    [Migration("20210301153357_Inicial")]
     partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -103,6 +103,9 @@ namespace Registro_con_Detalle.Migrations
                     b.Property<string>("Clave")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("DescripcionRol")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("Email")
                         .HasColumnType("TEXT");
 
@@ -111,9 +114,6 @@ namespace Registro_con_Detalle.Migrations
 
                     b.Property<string>("Nombres")
                         .HasColumnType("TEXT");
-
-                    b.Property<int>("RolID")
-                        .HasColumnType("INTEGER");
 
                     b.HasKey("UsuarioID");
 

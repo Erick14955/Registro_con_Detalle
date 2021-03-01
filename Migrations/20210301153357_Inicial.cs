@@ -44,7 +44,7 @@ namespace Registro_con_Detalle.Migrations
                     Nombres = table.Column<string>(type: "TEXT", nullable: true),
                     Email = table.Column<string>(type: "TEXT", nullable: true),
                     FechaIngreso = table.Column<DateTime>(type: "TEXT", nullable: false),
-                    RolID = table.Column<int>(type: "INTEGER", nullable: false),
+                    DescripcionRol = table.Column<string>(type: "TEXT", nullable: true),
                     Alias = table.Column<string>(type: "TEXT", nullable: true),
                     Activo = table.Column<bool>(type: "INTEGER", nullable: false)
                 },

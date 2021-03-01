@@ -101,6 +101,9 @@ namespace Registro_con_Detalle.Migrations
                     b.Property<string>("Clave")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("DescripcionRol")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("Email")
                         .HasColumnType("TEXT");
 
@@ -109,9 +112,6 @@ namespace Registro_con_Detalle.Migrations
 
                     b.Property<string>("Nombres")
                         .HasColumnType("TEXT");
-
-                    b.Property<int>("RolID")
-                        .HasColumnType("INTEGER");
 
                     b.HasKey("UsuarioID");
 
