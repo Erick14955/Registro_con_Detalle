@@ -23,12 +23,14 @@ namespace Registro_con_Detalle
         private void UsuariosToolStripMenuItem_ItemClicked(object sender, EventArgs e)
         {
             rUsuario usuarios = new rUsuario();
+            usuarios.MdiParent = this;
             usuarios.Visible = true;
         }
 
         private void RolesToolStripMenuItem_ItemClicked(object sender, EventArgs e)
         {
             rRoles roles = new rRoles();
+            roles.MdiParent = this;
             roles.Visible = true;
         }
 
